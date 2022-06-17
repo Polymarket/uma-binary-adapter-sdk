@@ -1,4 +1,4 @@
-# UMA CTF Adapter SDK
+# Polymarket UMA CTF Adapter SDK
 
 
 <a href='https://www.npmjs.com/package/@polymarket/uma-binary-adapter-sdk'>
