@@ -1,4 +1,4 @@
-# UMA Conditional Tokens Binary Adapter SDK
+# UMA CTF Adapter SDK
 
 This SDK is a lightweight wrapper around the `UmaConditionalTokensBinaryAdapter` contract.
 
