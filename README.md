@@ -1,5 +1,11 @@
 # UMA CTF Adapter SDK
 
+
+<a href='https://www.npmjs.com/package/@polymarket/uma-binary-adapter-sdk'>
+    <img src='https://img.shields.io/npm/v/@polymarket/uma-binary-adapter-sdk.svg' alt='NPM'/>
+</a>
+
+
 This SDK is a lightweight wrapper around the `UmaConditionalTokensBinaryAdapter` contract.
 
 ### Usage
