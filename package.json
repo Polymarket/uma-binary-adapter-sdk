@@ -21,7 +21,6 @@
         "@ethersproject/providers": "5.4.2",
         "@ethersproject/random": "^5.4.0",
         "@ethersproject/transactions": "^5.4.0",
-        "@polymarket/uma-ctf-binary-adapter": "1.0.0",
         "commitizen": "^4.2.1",
         "cz-conventional-changelog": "^3.3.0",
         "dotenv": "^8.2.0",

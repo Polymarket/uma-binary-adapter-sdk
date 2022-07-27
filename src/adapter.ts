@@ -3,14 +3,14 @@ import { JsonRpcSigner, TransactionResponse, TransactionReceipt } from "@ethersp
 import { Wallet } from "@ethersproject/wallet";
 import { Interface } from "@ethersproject/abi";
 import { BigNumber, ethers } from "ethers";
-import Adapter from "@polymarket/uma-ctf-binary-adapter/artifacts/contracts/UmaConditionalTokensBinaryAdapter.sol/UmaConditionalTokensBinaryAdapter.json";
+import { abi } from "./abi";
 import { QuestionData } from "./model";
 import { getAdapterAddress } from "./networks";
 import { createAncillaryData } from "./utils";
 
 export class UmaBinaryAdapterClient {
 
-    public static adapterAbi: Interface = new Interface(Adapter.abi)
+    public static adapterAbi: Interface = new Interface(abi)
 
     readonly chainID: number;
     readonly signer: JsonRpcSigner | Wallet;
