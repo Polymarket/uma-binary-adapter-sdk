@@ -16,10 +16,14 @@ export class UmaBinaryAdapterClient {
     readonly signer: JsonRpcSigner | Wallet;
     readonly contract: Contract;
 
-    constructor(signer: JsonRpcSigner | Wallet, chainID: number) {
+    constructor(signer: JsonRpcSigner | Wallet, chainID: number, address?: string) {
         this.signer = signer;
         this.chainID = chainID;
-        this.contract = new Contract(getAdapterAddress(this.chainID), UmaBinaryAdapterClient.adapterAbi, this.signer);
+        let contractAddress = getAdapterAddress(this.chainID);
+        if(address != null) {
+            contractAddress = address;
+        }
+        this.contract = new Contract(contractAddress, UmaBinaryAdapterClient.adapterAbi, this.signer);
     }
 
     /**
